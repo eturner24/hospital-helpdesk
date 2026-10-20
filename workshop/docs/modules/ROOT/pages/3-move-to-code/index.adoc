@@ -1,7 +1,8 @@
-= Move to code
+= Work with the model in code
 
 [role="_abstract"]
-So far, you have been using the Playground to interact with your model. The Playground is good for testing, but it does not deploy production AI agents. To do that, you must move to code.
-In this chapter, you explore the code version of what you ran in the Playground. The Playground provides instructions for moving your current setup into code.
+So far, you have used the Playground to interact with your model through the UI. The Playground is useful for testing, but to build toward a production application, you work with the model in code.
 
-Start by extracting the code from the Playground in xref:3-move-to-code/1-playground-to-code.adoc[3.1. Export your playground code]
+This chapter walks through the code version of what you ran in the Playground. The Playground can generate the equivalent code for you.
+
+Start by extracting the code from the Playground in xref:3-move-to-code/1-playground-to-code.adoc[3.1. Export your playground code].

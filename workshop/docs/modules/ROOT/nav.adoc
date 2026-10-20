@@ -9,7 +9,7 @@
 ** xref:2-just-a-model/1-model-catalog.adoc[2.1. Deploy a model from the model catalog]
 ** xref:2-just-a-model/2-playground.adoc[2.2. Chat with your model in the playground]
 ** xref:2-just-a-model/3-prompts.adoc[2.3. Customize model responses with prompts]
-* xref:3-move-to-code/index.adoc[3. Move to code]
+* xref:3-move-to-code/index.adoc[3. Work with the model in code]
 ** xref:3-move-to-code/1-playground-to-code.adoc[3.1. Export your playground code]
 ** xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench]
 ** xref:3-move-to-code/3-jupyter.adoc[3.3. Jupyter]
