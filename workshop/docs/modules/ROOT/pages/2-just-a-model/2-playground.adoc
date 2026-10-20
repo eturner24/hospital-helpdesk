@@ -1,18 +1,16 @@
 = Playground
 
 [role="_abstract"]
-// Guide to using the playground.
+Now that you have a model deployed, you probably want to use it and verify that it works.
 
-Now that you have a model deployed, you probably want to use it and make sure that it works.
-
-In {productname-short} there is a *Playground* which allows you to send messages to the model. +
-This is great for not only making sure that the model works, but to see how it responds to different messages.
+In {productname-short} you can use the *Playground* to send messages to the model. +
+Use it to confirm the model works and to see how it responds to different messages.
 
 == Procedure
 
-. Navigate to *Gen AI Studio → Playground* in {productname-short}. Make sure to select your project.
+. Navigate to *Gen AI studio → Playground* in {productname-short}. Ensure you select your project.
 
-. Click *Create Playground*, select our deployed model, leave *Max Tokens* empty, and then press Create
+. Click *Create Playground*, select your deployed model, leave *Max Tokens* empty, and then click *Create*.
 +
 image::2-just-a-model/create-playground.png[Create Playground]
 
@@ -20,25 +18,25 @@ image::2-just-a-model/create-playground.png[Create Playground]
 
 == Verification
 
-Try writing a few things to it (you can start with a simple Hi) and see how the model behaves. If everything is set up correctly you will get a (hopefully polite) answer back.
+Try writing a few things to it (you can start with Hi) and see how the model behaves. If everything is set up correctly you will get a polite answer back.
 
 image::2-just-a-model/playground-response.png[Playground Response]
 
-.Running on CPU and getting timeouts? Click here to see how to increase the timeout limits
+.Running on CPU and getting timeouts? Increase the timeout limits
 [%collapsible]
 ====
 Responses can take longer than the default 30-second timeout allows. There are two timeouts in the stack that both need to be increased. You can do this in two ways:
 
-*Option 1 — OpenShift CLI (web terminal or local):*
+*Option 1, OpenShift CLI (web terminal or local):*
 
-[source,bash]
+[source,terminal]
 ----
 oc apply -n <your-project-name> -f https://raw.githubusercontent.com/rh-aiservices-bu/hospital-helpdesk/main/setup/increase-timeouts-job.yaml
 ----
 
-*Option 2 — OpenShift console (Import YAML):*
+*Option 2, OpenShift console (Import YAML):*
 
-In the OpenShift console, click *+* in the top navigation bar, select *your project*, and paste the following:
+In the OpenShift console, click *+* in the navigation bar, select *your project*, and paste the following:
 
 [.lines_space]
 [.console-input]
@@ -91,4 +89,4 @@ After the job completes, the model has up to 10 minutes to respond without timin
 
 == Next step
 
-xref:2-just-a-model/3-prompts.adoc[Modify the models behaviour with prompts]
+xref:2-just-a-model/3-prompts.adoc[Modify the model's behavior with prompts]

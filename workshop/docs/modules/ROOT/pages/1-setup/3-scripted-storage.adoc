@@ -14,7 +14,7 @@ If you do not have your own S3-compatible storage or if you want to use a dispos
 
 IMPORTANT: The S4-based Object Storage that the script creates is *not* meant for production usage.
 
-NOTE: If you want to connect to your own storage, see xref:1-setup/4-manual-storage.adoc[Creating connections to your own S3-compatible object storage].
+NOTE: If you want to connect to your own storage, see xref:1-setup/4-manual-storage.adoc[Create connections to your own S3-compatible object storage].
 
 == Prerequisites
 

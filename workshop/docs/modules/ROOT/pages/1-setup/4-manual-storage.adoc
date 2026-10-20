@@ -1,7 +1,7 @@
 :_module-type: PROCEDURE
 
 [id='creating-connections-to-storage']
-= (Optional) Creating connections to your own S3-compatible object storage
+= Create connections to your own S3-compatible object storage
 
 NOTE: Skip this procedure if you completed the steps in xref:1-setup/3-scripted-storage.adoc[Running a script to install local object storage buckets and create connections].
 

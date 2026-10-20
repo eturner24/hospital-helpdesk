@@ -1,30 +1,25 @@
-= Deploy an MCP Server
+= Deploy an MCP server
 
 [role="_abstract"]
-// Guide to deploying the hospital ticketing MCP server on OpenShift.
-
-Before we can use tools in code, we need a tool to use. +
-In this section we deploy a small **MCP (Model Context Protocol) server** that simulates the IT ticketing system for Oak City General Hospital. +
-Using this, our agent will be able to read and file tickets for us!
+Before you can use tools in code, you need a tool to use. +
+In this section you deploy a small *MCP (Model Context Protocol) server* that simulates the IT ticketing system for Oak City General Hospital. +
+Using this, your agent can read and file tickets for you.
 
 The MCP server exposes four tools the model can request to use: `create_ticket`, `get_ticket`, `list_tickets`, and `update_ticket`. +
-The server is already pre-seeded with a handful of open tickets we will be able to explore.
+The server is already pre-seeded with several open tickets you can explore.
 
-After the server is running, a setup job automatically registers it as a connector in the OGX that underlies our Playground.
+After the server is running, a setup job automatically registers it as a connector in the OGX that underlies your Playground.
 
 == Procedure
 
-[NOTE]
-====
 If you are comfortable with the OpenShift CLI, you can deploy the MCP server with a single command instead of following the steps below:
 
-[source,bash]
+[source,terminal]
 ----
 oc apply -f https://raw.githubusercontent.com/rh-aiservices-bu/hospital-helpdesk/main/setup/mcp-ticketing.yaml
 ----
 
 Otherwise, follow the steps below.
-====
 
 . In the {productname-short} dashboard, click the application launcher icon and then select the *OpenShift Console* option.
 +
@@ -98,9 +93,9 @@ spec:
 +
 [NOTE]
 ====
-If you already completed the storage setup in xref:1-setup/3-scripted-storage.adoc[1.2.1. Data Connections], `demo-setup` and `demo-setup-edit` may already exist and you may see an error for those resources. This is fine, the `deploy-mcp-ticketing` Job will still run correctly.
+If you already completed the storage setup in xref:1-setup/3-scripted-storage.adoc[1.2.1. Running a script to install local object storage buckets and create connections], `demo-setup` and `demo-setup-edit` might already exist and you might see an error for those resources. This is fine, the `deploy-mcp-ticketing` Job will still run correctly.
 ====
 
 == Next step
 
-Now that the server is running and registered, let's use it from code in xref:6-tools-agents/2-tools-in-code.adoc[6.2. Agentic Workflow].
+Now that the server is running and registered, use it from code in xref:6-tools-agents/2-tools-in-code.adoc[6.2. Agentic workflow].

@@ -1,9 +1,9 @@
 :_module-type: PROCEDURE
 
 [id='running-code-in-a-notebook']
-= Running code in a notebook
+= Run code in a notebook
 
-NOTE: If you're already at ease with Jupyter, you can xref:3-move-to-code/5-run-playground-code.adoc[skip to the next section].
+NOTE: If you are already familiar with Jupyter, you can xref:3-move-to-code/5-run-playground-code.adoc[skip to the next section].
 
 [role="_abstract"]
 A notebook is an environment where you have _cells_ that can display formatted text or code.
@@ -16,15 +16,15 @@ This is a cell with some code:
 
 image::3-move-to-code/cell_code.png[Jupyter Cell Code]
 
-Code cells contain Python code that you can run interactively. You can edit the code and then run it. The code does not run on your computer or in the browser, but directly in your connected environment, *{productname-long}* in your case.
+Code cells contain Python code that you can run interactively. You can edit the code and then run it. The code does not run on your computer or in the browser. The code runs directly in your connected environment, *{productname-long}*.
 
 You can run a code cell from the notebook interface or from the keyboard:
 
-* *From the user interface:* Select the cell (by clicking inside the cell or to the left side of the cell) and then click *Run* from the toolbar.
+* *From the user interface:* Select the cell by clicking inside the cell or beside the cell, and then click *Run* from the toolbar.
 +
 image::3-move-to-code/run_button.png[Jupyter Run, 100]
 
-* *From the keyboard:* Press `CTRL` + `ENTER` to run a cell or press `SHIFT` + `ENTER` to run the cell and automatically select the next one.
+* *From the keyboard:* Press *Ctrl+Enter* to run a cell, or press *Shift+Enter* to run the cell and automatically select the next one.
 
 After you run a cell, you can see the result of its code and information about when the code in the cell ran, as shown in this example:
 
@@ -47,9 +47,9 @@ image::3-move-to-code/jupyter-notebook-0.png[Notebook 0]
 
 . Experiment by, for example, running the existing cells, adding more cells and creating functions.
 +
-You can do what you want - it is your environment and there is no risk of breaking anything or impacting other users. This environment isolation is also a great advantage brought by {productname-short}.
+You can do what you want. It is your environment and there is no risk of breaking anything or affecting other users. {productname-short} provides this environment isolation.
 . Optionally, create a new notebook in which the code cells are run by using a Python 3 kernel:
-.. Create a new notebook by either selecting *File ->New ->Notebook* or by clicking the Python 3 tile in the Notebook section of the launcher window:
+.. Create a new notebook by either selecting *File > New > Notebook* or by clicking the Python 3 tile in the Notebook section of the launcher window:
 +
 image::3-move-to-code/new_notebook.png[New notebook, 100]
 +
@@ -61,4 +61,4 @@ You can use different kernels, with different languages or versions, to run in y
 
 == Next step
 
-xref:3-move-to-code/5-run-playground-code.adoc[Playground to Code]
+xref:3-move-to-code/5-run-playground-code.adoc[Playground to code]

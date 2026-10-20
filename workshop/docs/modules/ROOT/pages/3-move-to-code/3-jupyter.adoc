@@ -1,16 +1,16 @@
 :_module-type: PROCEDURE
 
 [id='importing-files-into-jupyter']
-= Importing the {deliverable} files into the JupyterLab environment
+= Import the {deliverable} files into the JupyterLab environment
 
 :git-version: main
 
 [role="_abstract"]
-The JupyterLab environment is web-based, but all operations run on {productname-long} and are backed by the OpenShift cluster. This configuration allows you to run notebooks without installing local tools or consuming local CPU, GPU, or memory resources.
+The JupyterLab environment is web-based, but all operations run on {productname-long} and are backed by the OpenShift cluster. With this configuration, you can run notebooks without installing local tools or consuming local CPU, GPU, or memory resources.
 
 == Prerequisites
 
-- You created a workbench, as described in xref:3-move-to-code/2-workbench.adoc[3.2. Create a Workbench].
+- You created a workbench, as described in xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench].
 
 == Procedure
 
@@ -41,7 +41,7 @@ image::3-move-to-code/jupyter-git-modal.png[Git Modal, 200]
 
 .. Select the *Include submodules* option, and then click *Clone*.
 
-.. In the file browser, double-click the newly-created *hospital-helpdesk* folder to expand its contents.
+.. In the file browser, double-click the newly created *hospital-helpdesk* folder to expand its contents.
 +
 image::3-move-to-code/jupyter-file-browser.png[Jupyter file browser, 300]
 
@@ -59,4 +59,4 @@ xref:3-move-to-code/4-notebooks.adoc[Basic notebook introduction]
 
 or
 
-xref:3-move-to-code/5-run-playground-code.adoc[Moving from the Playground into code]
+xref:3-move-to-code/5-run-playground-code.adoc[Move from the Playground into code]

@@ -1,10 +1,9 @@
-= Playground to Code
+= Playground to code
 
 [role="_abstract"]
+Before you move away from the Playground, extract the code so that you can use it later.
 
-Before moving away from the playground, let's make sure to extract the code so we can use it later.
-
-NOTE: If you have no good way to save the code locally, skip this step, you will see instructions for how to do this again later when you actually use the code.
+NOTE: If you have no good way to save the code locally, skip this step. You will see instructions for how to do this again later when you use the code.
 
 == Prerequisites
 
@@ -12,18 +11,19 @@ NOTE: If you have no good way to save the code locally, skip this step, you will
 
 == Procedure
 
-. There is a button in the top right called *View code*, click that. +
-If the button is grayed out, you need to send a message to the chat. You can just send this if so: +
+. Click *View code*.
+If the button is not active, send a message to the chat. You can send this message:
++
 `A patient just called asking how to get to the radiology department from the main entrance. Can you help me draft a response?`
 +
 image::3-move-to-code/view-code.png[View code]
 
-. Then copy the full code, you can use the copy button in the top left of the modal.
+. Copy the full code. You can use the copy button in the modal.
 +
 image::3-move-to-code/copy-code.png[Copy code]
 
-. Save the code somewhere, you will need it in xref:3-move-to-code/5-run-playground-code.adoc[3.5. Run the Playground Code] where we run it.
+. Save the code somewhere. You will need it in xref:3-move-to-code/5-run-playground-code.adoc[3.5. Run the playground code], where you run it.
 
 == Next step
 
-Create a Workbench (a coding environment) in xref:3-move-to-code/2-workbench.adoc[3.2. Create a Workbench] so you have somewhere to run the code you just saved.
+Create a workbench (a coding environment) in xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench] so you have somewhere to run the code you saved.
