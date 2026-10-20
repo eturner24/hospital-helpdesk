@@ -39,7 +39,7 @@ You must wait until the pipeline configuration is complete before you continue a
 +
 [NOTE]
 ====
-Taking a while, or stuck? You can click *View progress and event logs* to see what's happening.
+If the configuration takes a while or appears stuck, click *View progress and event logs* to see the current status.
 
 If you have waited more than 5 minutes and the pipeline server configuration does not complete, you can click *Cancel pipeline server setup* and create it again.
 

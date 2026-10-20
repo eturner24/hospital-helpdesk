@@ -7,7 +7,7 @@ Now that you have a project, deploy a model into it.
 
 . Navigate to *AI hub* -> *Models* in the left sidebar.
 
-. You have a choice between with or without accelerator (also known as GPU). +
+. You can deploy with or without an accelerator, also known as a GPU. +
 Search for the following model in the search field and click the tile that appears. +
 *With Accelerator:*
 +
@@ -31,9 +31,8 @@ image::2-just-a-model/model-tile.png[Model Tile for Llama 3.2 3B Instruct]
 +
 This tutorial uses a small quantized model so it is compatible with more hardware options.
 +
-NOTE: If you don't see the model, you may need admin access to add it. +
-Not sure if you have admin access?  +
-Check the left navigation menu: if you see a *Settings* item, you're an {productname-short} admin and can add it yourself. If you don't see *Settings*, ask your cluster administrator to add it, or choose a similar model that's already available. +
+NOTE: If you do not see the model, you might need admin access to add it. +
+To check whether you have admin access, look at the navigation menu. If you see a *Settings* item, you are an {productname-short} admin and can add the model yourself. If you do not see *Settings*, ask your cluster administrator to add it, or choose a similar model that is already available. +
 To add it yourself: go to *Settings* -> *Model resources and operations* -> *Model catalog settings* and add a new source with the organization *RedHatAI*. Note that this may take a while to load as it syncs a large number of models.
 +
 image::2-just-a-model/model-catalog-settings.png[Model catalog settings showing RedHatAI organization]
@@ -57,7 +56,7 @@ With Accelerator::
 . Select your Project.
 . In the *Hardware profile*, select a profile that you can use to deploy on an accelerator, such as a GPU.
 . Click *Customize resource request and limits* and ensure you have one accelerator requests and limits, and at least 2 Cores CPU and 8 GiB Memory.
-. Under *Deployment resource*, select *Manual selection* and the runtime *vLLM NVIDIA GPU ServingRuntime for KServe* (for Nvidia GPUs, or related for other accelerators) from the dropdown.
+. Under *Deployment resource*, select *Manual selection* and then, from the dropdown, select the runtime *vLLM NVIDIA GPU ServingRuntime for KServe* for Nvidia GPUs, or the related runtime for other accelerators.
 +
 image::2-just-a-model/model-deployment-form.png[Model Deployment Form]
 --                                         
@@ -77,7 +76,7 @@ image::2-just-a-model/model-deployment-form-cpu.png[Model Deployment Form CPU]
 --
 ====
 . In *Advanced settings*:
-.. Select the *Publish as AI asset endpoint* option (and optionally enter a Use case).
+.. Select the *Publish as AI asset endpoint* option. Optionally, enter a use case.
 .. Select *Add custom runtime arguments* under Configuration parameters and enter the following arguments, one per line:
 +
 [.lines_space]
@@ -87,7 +86,7 @@ image::2-just-a-model/model-deployment-form-cpu.png[Model Deployment Form CPU]
 --enable-auto-tool-choice
 --tool-call-parser=llama3_json
 ----
-.. (If using CPU deployment) Select *Add custom runtime environment variables* under Configuration parameters, click *Add variable*, and enter `VLLM_CPU_KVCACHE_SPACE` in the name field and `8` in the value field.
+.. If you are using a CPU deployment, select *Add custom runtime environment variables* under Configuration parameters, click *Add variable*, and enter `VLLM_CPU_KVCACHE_SPACE` in the name field and `8` in the value field.
 .. Leave the rest as is.
 +
 image::2-just-a-model/advanced-settings-form.png[Advanced Settings Form]
@@ -100,7 +99,7 @@ image::2-just-a-model/review-form.png[Review Form]
 
 After deploying the model you will automatically be navigated to the model deployments page. The model should get deployed after a few minutes and you will see that it's Ready in the Status column. 
 
-During this process the model will download to disk, load into active memory (RAM or vRAM), and start running based on the runtime (vLLM in this case). Once it's running, it's served in a similar fashion to a webserver, and ready to receive requests to reply to.
+During this process the model will download to disk, load into active memory such as RAM or vRAM, and start running based on the runtime, which is vLLM in this case. Once it's running, it's served in a similar fashion to a webserver, and ready to receive requests to reply to.
 
 image::2-just-a-model/model-ready.png[Model is Ready]
 

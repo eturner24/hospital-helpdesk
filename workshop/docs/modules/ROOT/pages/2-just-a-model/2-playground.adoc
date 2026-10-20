@@ -18,11 +18,11 @@ image::2-just-a-model/create-playground.png[Create Playground]
 
 == Verification
 
-Try writing a few things to it (you can start with Hi) and see how the model behaves. If everything is set up correctly you will get a polite answer back.
+Try writing a few things to it, starting with Hi, and see how the model behaves. If everything is set up correctly you will get a polite answer back.
 
 image::2-just-a-model/playground-response.png[Playground Response]
 
-.Running on CPU and getting timeouts? Increase the timeout limits
+.Increase the timeout limits when running on CPU
 [%collapsible]
 ====
 Responses can take longer than the default 30-second timeout allows. There are two timeouts in the stack that both need to be increased. You can do this in two ways:

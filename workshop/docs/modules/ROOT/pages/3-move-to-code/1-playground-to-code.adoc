@@ -3,7 +3,7 @@
 [role="_abstract"]
 Before you move away from the Playground, extract the code so that you can use it later.
 
-NOTE: If you have no good way to save the code locally, skip this step. You will see instructions for how to do this again later when you use the code.
+NOTE: If you cannot save the code locally, skip this step. Instructions for extracting the code again appear later, when you use the code.
 
 == Prerequisites
 
@@ -26,4 +26,4 @@ image::3-move-to-code/copy-code.png[Copy code]
 
 == Next step
 
-Create a workbench (a coding environment) in xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench] so you have somewhere to run the code you saved.
+Create a workbench, which is a coding environment, in xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench] so you have somewhere to run the code you saved.

@@ -16,7 +16,7 @@ Start here with the ingestion part, which you build as a pipeline so it is easy 
 
 . Inside the workbench you should see a file called `rag_pipeline.py`, this is a pipeline built with the Kubeflow Pipelines Python SDK. Open it to take a look at how it is set up. +
 This pipeline contains the steps needed to chunk and ingest a new document into your RAG database, specifically this document: link:https://github.com/rh-aiservices-bu/hospital-helpdesk/blob/main/it_facilities_guide.pdf[it_facilities_guide.pdf,window=_blank] +
-The document has already been uploaded into an S3 bucket (remember the one you set up during xref:1-setup/2-data-connections.adoc[1.2. Data connections]?) which the pipeline will download from.
+The document has already been uploaded into an S3 bucket, which the pipeline downloads from. This is the bucket you set up in xref:1-setup/2-data-connections.adoc[1.2. Data connections].
 
 . After you have looked through it, run the code to compile and execute the pipeline by clicking the play button in the top menu.
 +

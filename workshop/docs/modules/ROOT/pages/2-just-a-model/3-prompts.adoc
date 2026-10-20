@@ -2,7 +2,7 @@
 
 [role="_abstract"]
 As you saw from chatting with the model, it answers, but it doesn't answer much like an AI assistant for a Hospital Helpdesk would. +
-To improve this, modify the prompt (the system prompt) that gets sent to the model together with your message.
+To improve this, modify the system prompt that gets sent to the model together with your message.
 
 There are two places where you can modify the prompt, either:
 
@@ -52,16 +52,16 @@ image::2-just-a-model/save-prompt.png[Save a new prompt]
 
 == Verification
 
-(Optional) First verify that the prompt was saved in your Prompts registry.
+Optionally, verify that the prompt was saved in your Prompts registry.
 
 . Go to Gen AI studio -> Prompts in the left menu. Ensure you also select your Project.
 
 . You should see *ai-hospital-helpdesk* there, and if you click it you will get more information, as well as options to:
-- Create a new version (you can do this from within the Playground as well by saving a new version)
+- Create a new version. You can also do this from within the Playground by saving a new version.
 - Deleting the version
 - Creating and updating metadata and aliases
 - Comparing prompts
-- Seeing related traces (described later)
+- Seeing related traces, described later
 
 image::2-just-a-model/prompts.png[Prompts dashboard]
 
@@ -81,7 +81,7 @@ image::2-just-a-model/new-chat.png[Create a new chat]
 
 . Ask the chatbot a few things and see how it responds differently than before. You can for example ask it: +
 `A patient just called asking how to get to the radiology department from the main entrance. Can you help me draft a response?` +
-(it's a small model, so the response may not be the highest quality)
+This is a small model, so the response might not be the highest quality.
 
 == Next step
 

@@ -32,7 +32,7 @@ image::3-move-to-code/cell_run.png[Jupyter run cell]
 
 When you save a notebook, the code and the results are saved. You can reopen the notebook to view the results without having to run the program again, and still having access to the code.
 
-Notebooks are so named because they are like a physical _notebook_: you can take notes about your experiments, along with the code itself, including any parameters that you set. You can see the output of the experiment inline (this is the result after a cell runs), along with all the notes that you want to take. To take notes, from the menu switch the cell type from `Code` to `Markdown`.
+Notebooks are so named because they are like a physical _notebook_: you can take notes about your experiments, along with the code itself, including any parameters that you set. You can see the output of the experiment inline, which is the result after a cell runs, along with all the notes that you want to take. To take notes, from the menu switch the cell type from `Code` to `Markdown`.
 
 == Prerequisites
 
