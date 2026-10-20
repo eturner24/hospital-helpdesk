@@ -20,7 +20,7 @@ Code cells contain Python code that you can run interactively. You can edit the 
 
 You can run a code cell from the notebook interface or from the keyboard:
 
-* *From the user interface:* Select the cell by clicking inside the cell or beside the cell, and then click *Run* from the toolbar.
+* *From the user interface:* Select the cell by clicking inside or next to the cell, and then click *Run* from the toolbar.
 +
 image::3-move-to-code/run_button.png[Jupyter Run, 100]
 
@@ -30,9 +30,9 @@ After you run a cell, you can see the result of its code and information about w
 
 image::3-move-to-code/cell_run.png[Jupyter run cell]
 
-When you save a notebook, the code and the results are saved. You can reopen the notebook to view the results without having to run the program again, and still having access to the code.
+When you save a notebook, the code and the results are saved. You can reopen the notebook to view the results and the code without running it again.
 
-Notebooks are so named because they are like a physical _notebook_: you can take notes about your experiments, along with the code itself, including any parameters that you set. You can see the output of the experiment inline, which is the result after a cell runs, along with all the notes that you want to take. To take notes, from the menu switch the cell type from `Code` to `Markdown`.
+Like a physical notebook, a Jupyter notebook holds your notes alongside your code. You can record notes about your experiments and any parameters you set, and see each cell's output inline. To add notes, switch a cell type from `Code` to `Markdown`.
 
 == Prerequisites
 
@@ -45,9 +45,9 @@ xref:3-move-to-code/3-jupyter.adoc[3.3 Jupyter].
 +
 image::3-move-to-code/jupyter-notebook-0.png[Notebook 0]
 
-. Experiment by, for example, running the existing cells, adding more cells and creating functions.
+. Experiment by running the existing cells, adding more cells, and creating functions.
 +
-You can do what you want. It is your environment and there is no risk of breaking anything or affecting other users. {productname-short} provides this environment isolation.
+Use this notebook as a sandbox to test code and view results without impacting real data.
 . Optionally, create a new notebook in which the code cells are run by using a Python 3 kernel:
 .. Create a new notebook by either selecting *File > New > Notebook* or by clicking the Python 3 tile in the Notebook section of the launcher window:
 +
@@ -57,7 +57,7 @@ You can use different kernels, with different languages or versions, to run in y
 
 == Additional resources
 
-* link:https://jupyter.org/[the Jupyter site]
+* link:https://jupyter.org/[Jupyter website]
 
 == Next step
 

@@ -1,9 +1,9 @@
 = Export your playground code
 
 [role="_abstract"]
-Before you move away from the Playground, extract the code so that you can use it later.
+Before you leave the Playground, extract the code so that you can use it later.
 
-NOTE: If you cannot save the code locally, skip this step. Instructions for extracting the code again appear later, when you use the code.
+NOTE: This step is optional. You can extract the code again later when you are ready to use it.
 
 == Prerequisites
 
@@ -18,12 +18,12 @@ If the button is not active, send a message to the chat. You can send this messa
 +
 image::3-move-to-code/view-code.png[View code]
 
-. Copy the full code. You can use the copy button in the modal.
+. Copy the code.
 +
 image::3-move-to-code/copy-code.png[Copy code]
 
-. Save the code somewhere. You will need it in xref:3-move-to-code/5-run-playground-code.adoc[3.5. Run the playground code], where you run it.
+. Save the code to a local text file. You will need it in xref:3-move-to-code/5-run-playground-code.adoc[3.5. Run the playground code].
 
 == Next step
 
-Create a workbench, which is a coding environment, in xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench] so you have somewhere to run the code you saved.
+To run the code you saved in a coding environment, xref:3-move-to-code/2-workbench.adoc[Create a workbench].

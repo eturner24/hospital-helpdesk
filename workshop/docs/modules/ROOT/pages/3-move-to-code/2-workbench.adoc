@@ -32,7 +32,7 @@ image::3-move-to-code/create-workbench-form-image.png[Workbench image, 600]
 +
 image::3-move-to-code/add-data-connection.png[Add Data Connection]
 
-. Leave the rest as is and click *Create workbench*.
+. Leave the rest as-is and click *Create workbench*.
 
 == Verification
 
@@ -40,7 +40,7 @@ In the *Workbenches* tab for the project, the status of the workbench changes fr
 
 image::3-move-to-code/ds-project-workbench-list.png[Workbench list]
 
-NOTE: If you made a mistake, you can edit the workbench to make changes.
+NOTE: To change any of the workbench settings, you can edit the workbench.
 
 image::3-move-to-code/ds-project-workbench-list-edit.png[Workbench list edit, 350]
 
