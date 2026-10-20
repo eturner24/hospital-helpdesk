@@ -1,4 +1,4 @@
-= RAG ingestion pipelines
+= Ingest documents with a pipeline
 
 [role="_abstract"]
 Now that you have used RAG from the Playground, you can do the same thing in code. +
@@ -8,7 +8,7 @@ Start here with the ingestion part, which you build as a pipeline so you can tri
 == Prerequisites
 
 - Have a workbench set up according to xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench]
-- Set up the playground as described in xref:2-just-a-model/2-playground.adoc[2.2. Using the Playground]
+- Set up the playground as described in xref:2-just-a-model/2-playground.adoc[2.2. Chat with your model in the playground]
 
 == Procedure
 
@@ -16,7 +16,7 @@ Start here with the ingestion part, which you build as a pipeline so you can tri
 
 . Inside the workbench you should see a file called `rag_pipeline.py`, this is a pipeline built with the Kubeflow Pipelines Python SDK. Open it to take a look at how it is set up. +
 This pipeline contains the steps needed to chunk and ingest a new document into your RAG database, specifically this document: link:https://github.com/rh-aiservices-bu/hospital-helpdesk/blob/main/it_facilities_guide.pdf[it_facilities_guide.pdf,window=_blank] +
-The document has already been uploaded into an S3 bucket, which the pipeline downloads from. This is the bucket you set up in xref:1-setup/2-data-connections.adoc[1.2. Data connections].
+The document has already been uploaded into an S3 bucket, which the pipeline downloads from. This is the bucket you set up in xref:1-setup/2-data-connections.adoc[1.2. Connect to your data].
 
 . After you have looked through it, run the code to compile and execute the pipeline by clicking the play button in the top menu.
 +
@@ -36,10 +36,10 @@ image::5-rag/pipeline-run.png[Pipeline Run]
 +
 image::5-rag/running-pipeline.png[Running Pipeline]
 
-. If you completed xref:5-rag/1-rag-in-playground.adoc[5.1. RAG in the playground] and did not specify a custom `VECTOR_STORE_NAME` in the pipeline, the new file will appear in the Playground automatically. Try asking: `I forgot my password and am locked out of my account. How do I reset it?`
+. If you completed xref:5-rag/1-rag-in-playground.adoc[5.1. Try RAG in the playground] and did not specify a custom `VECTOR_STORE_NAME` in the pipeline, the new file will appear in the Playground automatically. Try asking: `I forgot my password and am locked out of my account. How do I reset it?`
 +
 image::5-rag/file-in-playground.png[File in Playground]
 
 == Next step
 
-Now that you have the data ingested, create RAG programmatically with tracing in xref:5-rag/3-rag-in-code.adoc[RAG in code].
+Now that you have the data ingested, create RAG programmatically with tracing in xref:5-rag/3-rag-in-code.adoc[Add RAG to your code].

@@ -66,7 +66,7 @@ Without Accelerator::
 --
 NOTE: If you don't have an accelerator, your performance will depend heavily on the type of CPU you have and how much resources you can give the model. +
 In some cases the response time will be too slow to be usable, in which case consider choosing a smaller model such as *Qwen2.5-1.5B-quantized.w8a8*. +
-However, a smaller model might not be viable for xref:5-rag/1-rag-in-playground.adoc[5.1. RAG in the playground] or the entire xref:6-tools-agents/index.adoc[6. Tools and agents] section.
+However, a smaller model might not be viable for xref:5-rag/1-rag-in-playground.adoc[5.1. Try RAG in the playground] or the entire xref:6-tools-agents/index.adoc[6. Tools and agents] section.
 
 . Select your Project.
 . Click *Customize resource request and limits* and set CPU to at least 10 cores and memory to at least 16 GiB.
@@ -105,4 +105,4 @@ image::2-just-a-model/model-ready.png[Model is Ready]
 
 == Next step
 
-xref:2-just-a-model/2-playground.adoc[Using the Playground]
+xref:2-just-a-model/2-playground.adoc[Chat with your model in the playground]

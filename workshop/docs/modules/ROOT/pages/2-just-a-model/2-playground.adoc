@@ -1,4 +1,4 @@
-= Playground
+= Chat with your model in the playground
 
 [role="_abstract"]
 Now that you have a model deployed, use it to verify that it works.
@@ -94,4 +94,4 @@ After the job completes, the response timeout increases to 10 minutes.
 
 == Next step
 
-xref:2-just-a-model/3-prompts.adoc[Modify the model's behavior with prompts]
+xref:2-just-a-model/3-prompts.adoc[Customize model responses with prompts]

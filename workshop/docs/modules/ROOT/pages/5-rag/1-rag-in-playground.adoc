@@ -1,4 +1,4 @@
-= RAG in the playground
+= Try RAG in the playground
 
 [role="_abstract"]
 RAG (Retrieval Augmented Generation) is a technique where you feed information relevant to the current conversation into the prompt, so that the LLM has more context when it generates an answer. +
@@ -11,7 +11,7 @@ You can upload documents and see the replies you get with your system prompt.
 
 == Prerequisites
 
-- The playground has been created according to xref:2-just-a-model/2-playground.adoc[2.2. Using the Playground] 
+- The playground has been created according to xref:2-just-a-model/2-playground.adoc[2.2. Chat with your model in the playground] 
 
 == Procedure
 
@@ -70,4 +70,4 @@ The Playground is not connected to MLflow, so you won't see traces from here. In
 
 == Next step
 
-Now that you have tested RAG, implement it programmatically, starting with xref:5-rag/2-rag-pipeline.adoc[RAG ingestion pipelines]
+Now that you have tested RAG, implement it programmatically, starting with xref:5-rag/2-rag-pipeline.adoc[Ingest documents with a pipeline]

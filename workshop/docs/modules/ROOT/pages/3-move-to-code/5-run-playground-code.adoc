@@ -5,7 +5,7 @@ Now that the workbench is set up, you can move your Playground functionality to 
 
 == Prerequisites
 
-- The Playground code has been exported as described in xref:3-move-to-code/1-playground-to-code.adoc[3.1. Playground to code].
+- The Playground code has been exported as described in xref:3-move-to-code/1-playground-to-code.adoc[3.1. Export your playground code].
 - A workbench is set up, as described in xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench].
 
 == Procedure

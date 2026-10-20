@@ -1,4 +1,4 @@
-= Playground to code
+= Export your playground code
 
 [role="_abstract"]
 Before you move away from the Playground, extract the code so that you can use it later.
@@ -7,7 +7,7 @@ NOTE: If you cannot save the code locally, skip this step. Instructions for extr
 
 == Prerequisites
 
-- The Playground is set up and tested, as described in xref:2-just-a-model/2-playground.adoc[2.2. Using the Playground]
+- The Playground is set up and tested, as described in xref:2-just-a-model/2-playground.adoc[2.2. Chat with your model in the playground]
 
 == Procedure
 

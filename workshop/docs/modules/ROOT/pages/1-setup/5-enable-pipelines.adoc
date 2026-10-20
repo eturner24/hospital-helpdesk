@@ -10,7 +10,7 @@ With AI pipelines, you can schedule and automate the execution of notebooks and 
 
 == Prerequisites
 
-* You have set up a data connection with a *Pipeline Artifacts* bucket, as described in xref:1-setup/2-data-connections.adoc[1.2. Data connections].
+* You have set up a data connection with a *Pipeline Artifacts* bucket, as described in xref:1-setup/2-data-connections.adoc[1.2. Connect to your data].
 
 == Procedure
 

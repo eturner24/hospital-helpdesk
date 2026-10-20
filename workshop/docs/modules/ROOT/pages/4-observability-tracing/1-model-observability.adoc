@@ -1,4 +1,4 @@
-= Model observability
+= Monitor your model with metrics
 
 [role="_abstract"]
 {productname-short} provides a built-in observability dashboard for viewing model metrics. +
@@ -25,7 +25,7 @@ image::4-observability-tracing/click-model.png[Click the model]
 +
 image::4-observability-tracing/model-metrics.png[Request per 5 minutes metric]
 
-. If you want to see more requests or don't see any within this time period, you can return to the Playground as described in xref:2-just-a-model/2-playground.adoc[2.2. Using the Playground], and send a few more messages.
+. If you want to see more requests or don't see any within this time period, you can return to the Playground as described in xref:2-just-a-model/2-playground.adoc[2.2. Chat with your model in the playground], and send a few more messages.
 
 == Next step
 

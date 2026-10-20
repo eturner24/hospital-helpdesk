@@ -1,7 +1,7 @@
 :_module-type: PROCEDURE
 
 [id='running-a-script-to-install-storage']
-= Run a script to install local object storage buckets and create connections
+= Install local object storage with a script
 
 [role="_abstract"]
 If you do not have your own S3-compatible storage or if you want to use a disposable local "Super Simple Storage Service" (S4) instance instead, run the script provided in the following procedure, which automatically completes these tasks:

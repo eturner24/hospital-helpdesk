@@ -1,4 +1,4 @@
-= Agentic workflow
+= Build an agentic workflow
 
 [role="_abstract"]
 In the RAG chapter you let the *OGX server* manage the agent loop through the Responses API. +

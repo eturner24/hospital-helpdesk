@@ -1,4 +1,4 @@
-= RAG in code
+= Add RAG to your code
 
 [role="_abstract"]
 Like before, you could use the Playground's *View Code* button, but this time there is a prepared notebook so you can start immediately without copying and pasting from the Playground.
@@ -6,7 +6,7 @@ Like before, you could use the Playground's *View Code* button, but this time th
 == Prerequisites
 
 - Have a workbench set up according to xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench]
-- Ingested RAG data through either xref:5-rag/2-rag-pipeline.adoc[5.2. RAG ingestion pipelines] or xref:5-rag/1-rag-in-playground.adoc[5.1. RAG in the playground]
+- Ingested RAG data through either xref:5-rag/2-rag-pipeline.adoc[5.2. Ingest documents with a pipeline] or xref:5-rag/1-rag-in-playground.adoc[5.1. Try RAG in the playground]
 
 == Procedure
 

@@ -1,4 +1,4 @@
-= Setup
+= Set up your project
 
 [role="_abstract"]
 Before you start building your Hospital Helpdesk assistant, you need to get set up in {productname-short}. +
