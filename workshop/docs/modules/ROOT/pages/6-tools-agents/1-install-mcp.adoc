@@ -93,7 +93,7 @@ spec:
 +
 [NOTE]
 ====
-If you already completed the storage setup in xref:1-setup/3-scripted-storage.adoc[1.2.1. Running a script to install local object storage buckets and create connections], `demo-setup` and `demo-setup-edit` might already exist and you might see an error for those resources. This is fine, the `deploy-mcp-ticketing` Job will still run correctly.
+If you already completed the storage setup in xref:1-setup/3-scripted-storage.adoc[1.2.1. Run a script to install local object storage buckets and create connections], `demo-setup` and `demo-setup-edit` might already exist and you might see an error for those resources. This is fine, the `deploy-mcp-ticketing` Job will still run correctly.
 ====
 
 == Next step

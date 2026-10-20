@@ -3,7 +3,7 @@
 [id='creating-connections-to-storage']
 = Create connections to your own S3-compatible object storage
 
-NOTE: Skip this procedure if you completed the steps in xref:1-setup/3-scripted-storage.adoc[Running a script to install local object storage buckets and create connections].
+NOTE: Skip this procedure if you completed the steps in xref:1-setup/3-scripted-storage.adoc[Run a script to install local object storage buckets and create connections].
 
 If you have existing S3-compatible storage buckets that you want to use for this {deliverable}, you must create a connection to one storage bucket for saving your data and models. If you want to complete the pipelines section of this {deliverable}, create another connection to a different storage bucket for saving pipeline artifacts.
 
