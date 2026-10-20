@@ -1,7 +1,7 @@
 :_module-type: PROCEDURE
 
 [id='enabling-ai-pipelines']
-= Enable AI pipelines
+= (Optional) Enable AI pipelines
 
 [role="_abstract"]
 AI pipelines are optional. If you do not intend to use Kubeflow Pipelines, you can skip ahead to xref:2-just-a-model/index.adoc[2. Get your first model running].
@@ -10,7 +10,7 @@ With AI pipelines, you can schedule and automate the execution of notebooks and 
 
 == Prerequisites
 
-* You have set up a Data Connection with a *Pipeline Artifacts* bucket, as described in xref:1-setup/2-data-connections.adoc[1.2. Data connections].
+* You have set up a data connection with a *Pipeline Artifacts* bucket, as described in xref:1-setup/2-data-connections.adoc[1.2. Data connections].
 
 == Procedure
 
@@ -57,4 +57,4 @@ An information box opens and displays the object storage connection information 
 
 == Next step
 
-Now that you are all set up, you can continue to deploying and using your GenAI model in xref:2-just-a-model/index.adoc[2. Get your first model running].
+You can continue to deploying and using your GenAI model in xref:2-just-a-model/index.adoc[2. Get your first model running].

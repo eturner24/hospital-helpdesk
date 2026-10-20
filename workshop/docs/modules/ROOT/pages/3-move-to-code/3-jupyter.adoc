@@ -48,7 +48,7 @@ image::3-move-to-code/jupyter-file-browser.png[Jupyter file browser, 300]
 
 == Verification
 
-. You should be able to see all files related to the {deliverable}.
+. All files related to the {deliverable} are visible.
 +
 image::3-move-to-code/jupyter-file-browser-2.png[Jupyter file browser]
 

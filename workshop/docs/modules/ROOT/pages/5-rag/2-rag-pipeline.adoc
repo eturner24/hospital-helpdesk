@@ -3,7 +3,7 @@
 [role="_abstract"]
 Now that you have used RAG from the Playground, you can do the same thing in code. +
 There are two parts to it: one for ingesting the documents, and one for querying the model using those documents. +
-Start here with the ingestion part, which you build as a pipeline so it is easy to trigger whenever new documents are added.
+Start here with the ingestion part, which you build as a pipeline so you can trigger it whenever new documents are added.
 
 == Prerequisites
 

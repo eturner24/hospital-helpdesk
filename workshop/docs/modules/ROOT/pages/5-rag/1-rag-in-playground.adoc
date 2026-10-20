@@ -7,7 +7,7 @@ You can use the LLM to answer specific questions, such as: +
 `An infusion pump is showing error code 525. Who do I contact for a replacement and where do I send the faulty unit?`
 
 Before you build your own RAG behavior, you can try out RAG with your model inside the Playground. +
-This makes it easy to upload documents and see what kind of replies you get with your system prompt.
+You can upload documents and see the replies you get with your system prompt.
 
 == Prerequisites
 
