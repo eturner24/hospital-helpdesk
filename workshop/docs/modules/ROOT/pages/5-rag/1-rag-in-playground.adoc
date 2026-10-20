@@ -11,13 +11,13 @@ You can upload documents and see the replies you get with your system prompt.
 
 == Prerequisites
 
-- The playground has been created according to xref:2-just-a-model/2-playground.adoc[2.2. Chat with your model in the playground] 
+- You have created the playground as described in xref:2-just-a-model/2-playground.adoc[2.2. Chat with your model in the playground].
 
 == Procedure
 
-. Download the following file, it contains information about your hospital's standard operating procedures: link:https://github.com/rh-aiservices-bu/hospital-helpdesk/blob/main/oak_hospital_regulations.pdf[oak_hospital_regulations.pdf,window=_blank]
+. Download the following file, which contains information about your hospital's standard operating procedures: link:https://github.com/rh-aiservices-bu/hospital-helpdesk/blob/main/oak_hospital_regulations.pdf[oak_hospital_regulations.pdf,window=_blank]
 
-. Navigate to the Playground by going through *Gen AI studio* > *Playground*, and make sure you select your project.
+. Navigate to the Playground by selecting *Gen AI studio* > *Playground*, and ensure that you select your project.
 
 . Click the *Knowledge* tab and turn on the *RAG* toggle.
 +
@@ -25,17 +25,17 @@ image::5-rag/enable-rag.png[Enable RAG]
 
 . Click *Upload* under *Add files* and select the oak_hospital_regulations.pdf you just downloaded.
 
-. Change the chunk length to 200 and overlap to 100 to get smaller chunks, then click *Upload*.
+. Change the chunk length to 200 and the overlap to 100 to get smaller chunks, and then click *Upload*.
 +
 image::5-rag/upload-settings.png[Upload Settings]
 
-. The upload will likely pause at 50% for a couple of minutes while the file is processed. Once complete, it should look something like this.
+. The upload pauses at 50% for a couple of minutes while the file is processed. When it is complete, it looks similar to this:
 +
 image::5-rag/pdf.uploaded.png[PDF Uploaded]
 
 == Verification
 
-. Start by making sure that your system prompt is loaded.
+. Verify that your system prompt is loaded.
 
 . Before testing with RAG, first turn off RAG so you can see how the model behaves without it. Ask this question:
 +
@@ -49,7 +49,7 @@ Who do I contact for a replacement and where do I send the faulty unit?
 
 . Create a new chat by clicking *+ New Chat*. Turn on RAG, and then ask the same question.
 
-. Did you see a difference? With RAG turned on, you should see an answer similar to this:
+. With RAG turned on, you see an answer similar to this:
 +
 .Example RAG response
 ====
@@ -64,9 +64,9 @@ For an immediate replacement unit, contact the Central Supply department at exte
 After filing the ticket and securing a replacement, the faulty ClearFlow pump should be cleaned according to standard sanitation procedures and sent to the Biomedical Engineering department. Place the tagged unit in the designated "Biomedical Outgoing" bin, typically located in the floor's main utility room next to the clean supply closet.
 ====
 
-. You can ask more questions, such as: where the Biomedical Engineering department is located. When you are done testing RAG you can move on to the next section.
+. You can ask more questions, such as where the Biomedical Engineering department is located. When you are done testing RAG, you can move on to the next section.
 
-The Playground is not connected to MLflow, so you won't see traces from here. In the next section where you implement RAG in code, you will.
+The Playground is not connected to MLflow, so you do not see traces here. In the next section, you implement RAG in code and can view the traces.
 
 == Next step
 

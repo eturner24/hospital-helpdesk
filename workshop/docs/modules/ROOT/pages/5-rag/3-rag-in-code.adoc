@@ -5,22 +5,22 @@ Like before, you could use the Playground's *View Code* button, but this time th
 
 == Prerequisites
 
-- Have a workbench set up according to xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench]
-- Ingested RAG data through either xref:5-rag/2-rag-pipeline.adoc[5.2. Ingest documents with a pipeline] or xref:5-rag/1-rag-in-playground.adoc[5.1. Try RAG in the playground]
+- You have a workbench set up according to xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench].
+- You have ingested RAG data through either xref:5-rag/2-rag-pipeline.adoc[5.2. Ingest documents with a pipeline] or xref:5-rag/1-rag-in-playground.adoc[5.1. Try RAG in the playground].
 
 == Procedure
 
-. Navigate to your workbench. If you don't have it open, you can find it through the {productname-short} dashboard > Projects > your project.
+. Navigate to your workbench. If it is not open, find it through the {productname-short} dashboard > Projects > your project.
 
-. Inside the workbench, open the notebook `2_rag.ipynb` and run through it. Come back here when you are done.
+. In the workbench, open the notebook `2_rag.ipynb` and complete it. Return here when you are done.
 
 == Verification
 
-. At the end of the notebook you should see answers that look something like this:
+. At the end of the notebook, you see answers similar to this:
 +
 image::5-rag/code-rag-answers.png[Code RAG Answers]
 
-. You now also have MLflow traces to inspect. Navigate to MLflow through {productname-short} > Develop & train > Experiments (MLflow) and open the latest trace. You can see that the model is making tool calls to retrieve the documents you uploaded earlier.
+. You now also have MLflow traces to inspect. Navigate to MLflow through {productname-short} > *Develop & train* > *Experiments (MLflow)* and open the latest trace. The model makes tool calls to retrieve the documents you uploaded earlier.
 +
 image::5-rag/mlflow-rag-trace.png[MLflow RAG Trace]
 
@@ -28,7 +28,7 @@ image::5-rag/mlflow-rag-trace.png[MLflow RAG Trace]
 +
 image::5-rag/rag-trace-span.png[RAG Trace Span]
 +
-NOTE: You can see here how requests go to a tool. This is not traditional RAG but instead agentic RAG, calling a tool to get the document chunks needed for context (and in the case of this AI model, it calls the tool three times, likely because it is a smaller model).
+NOTE: This shows how requests go to a tool. This is not traditional RAG but agentic RAG: the model calls a tool to get the document chunks needed for context. This model calls the tool three times, likely because it is a smaller model.
 
 == Next step
 

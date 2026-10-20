@@ -11,12 +11,12 @@ Here, you move the loop to the *client* by using LangGraph, which gives you full
 
 == Procedure
 
-. Open the notebook `3_tools.ipynb` in your workbench and go through it, come back here after you are done.
+. Open the notebook `3_tools.ipynb` in your workbench and complete it. Return here when you are done.
 
 == Verification
 
-. At the end of the notebook you should see outputs that look something like this. +
-You can also see the intermediate tool calls the agent makes and which tool it chooses. Note again that it is a smaller model so it might not always choose or interpret the tools correctly.
+. At the end of the notebook, you see outputs similar to this. +
+You can also see the intermediate tool calls the agent makes and which tool it chooses. This is a smaller model, so it might not always choose or interpret the tools correctly.
 +
 image::6-tools-agents/tool-response.png[Tool response]
 

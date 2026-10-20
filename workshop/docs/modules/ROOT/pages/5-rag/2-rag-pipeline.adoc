@@ -7,24 +7,24 @@ Start here with the ingestion part, which you build as a pipeline so you can tri
 
 == Prerequisites
 
-- Have a workbench set up according to xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench]
-- Set up the playground as described in xref:2-just-a-model/2-playground.adoc[2.2. Chat with your model in the playground]
+- You have a workbench set up according to xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench].
+- You have set up the playground as described in xref:2-just-a-model/2-playground.adoc[2.2. Chat with your model in the playground].
 
 == Procedure
 
-. Navigate to your workbench. If you don't have it open, you can find it through the {productname-short} Dashboard > Projects > your project.
+. Navigate to your workbench. If it is not open, find it through the {productname-short} dashboard > Projects > your project.
 
-. Inside the workbench you should see a file called `rag_pipeline.py`, this is a pipeline built with the Kubeflow Pipelines Python SDK. Open it to take a look at how it is set up. +
+. In the workbench, open the file called `rag_pipeline.py`. This is a pipeline built with the Kubeflow Pipelines Python SDK. Review how it is set up. +
 This pipeline contains the steps needed to chunk and ingest a new document into your RAG database, specifically this document: link:https://github.com/rh-aiservices-bu/hospital-helpdesk/blob/main/it_facilities_guide.pdf[it_facilities_guide.pdf,window=_blank] +
 The document has already been uploaded into an S3 bucket, which the pipeline downloads from. This is the bucket you set up in xref:1-setup/2-data-connections.adoc[1.2. Connect to your data].
 
-. After you have looked through it, run the code to compile and execute the pipeline by clicking the play button in the top menu.
+. Run the code to compile and run the pipeline by clicking the play button in the top menu.
 +
 image::5-rag/run-pipeline.png[Run Pipeline]
 
 == Verification
 
-. If everything went well you should see this output:
+. The following output appears:
 +
 image::5-rag/console-output.png[Console Output]
 
@@ -32,7 +32,7 @@ image::5-rag/console-output.png[Console Output]
 +
 image::5-rag/pipeline-run.png[Pipeline Run]
 
-. You can track the pipeline progress here. After a few minutes, both steps should turn green. You can also click each step to see more details.
+. Track the pipeline progress here. After a few minutes, both steps turn green. You can also click each step to see more details.
 +
 image::5-rag/running-pipeline.png[Running Pipeline]
 

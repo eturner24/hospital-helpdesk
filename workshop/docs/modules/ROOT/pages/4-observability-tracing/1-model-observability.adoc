@@ -10,13 +10,13 @@ Many more metrics are also scraped and exposed through Prometheus, and can be us
 
 == Procedure
 
-. Navigate to the {productname-short} dashboard and select *AI hub > Models*
+. Navigate to the {productname-short} dashboard and select *AI hub > Models*.
 
-. On the *Models* page, click the *Deployments* tab, make sure you are in the right project, and then click your deployed model
+. On the *Models* page, click the *Deployments* tab. Verify that you are in the correct project, and then click your deployed model.
 +
 image::4-observability-tracing/click-model.png[Click the model]
 
-. You will now be able to see a few metrics about the model:
+. The following model metrics are displayed:
 +
 - Requests per 5 minutes
 - Average response time
@@ -25,7 +25,7 @@ image::4-observability-tracing/click-model.png[Click the model]
 +
 image::4-observability-tracing/model-metrics.png[Request per 5 minutes metric]
 
-. If you want to see more requests or don't see any within this time period, you can return to the Playground as described in xref:2-just-a-model/2-playground.adoc[2.2. Chat with your model in the playground], and send a few more messages.
+. To generate more requests, or if none appear within this time period, return to the Playground as described in xref:2-just-a-model/2-playground.adoc[2.2. Chat with your model in the playground] and send a few more messages.
 
 == Next step
 

@@ -13,30 +13,30 @@ You send requests to the model with MLflow tracing enabled, and see how they are
 == Procedure
 
 . Return to the workbench and open the notebook called `1_mlflow_request.ipynb`. If you closed the workbench, reopen it from your AI project. +
-This notebook will guide you through how to set up a connection with MLflow and enable tracing to collect information from requests being sent by that notebook.
+This notebook shows how to set up a connection with MLflow and enable tracing to collect information from the requests that the notebook sends.
 +
 NOTE: You need to enable tracing in all applications you want to appear in the trace. In this case, you enable it from within your Python code.
 
-. Go through that notebook and then return here to examine the MLflow UI.
+. Complete the notebook, and then return here to examine the MLflow UI.
 
 == Verification
 
 . After the notebook has finished running, return to the OpenShift AI dashboard and select *Develop & train* and then *Experiments*
 
-. Make sure you are in the right project. You should see an experiment called *hospital-helpdesk*. Click *hospital-helpdesk*.
+. Verify that you are in the correct project. An experiment called *hospital-helpdesk* is listed. Click *hospital-helpdesk*.
 +
 image::4-observability-tracing/click-experiment.png[Click the experiment]
 
-. You will now see an overview of your MLflow tracked requests in this experiment. You can browse it. The specific traces are more useful, so select the *Traces* section.
+. An overview of your MLflow-tracked requests in this experiment appears. You can browse it. To see the specific traces, select the *Traces* section.
 +
 image::4-observability-tracing/experiment-overview.png[Experiment overview]
 
-. This is a list of your traces from the requests you made in the notebook. You should have five in total. Click the top one to get more details.
+. Your traces from the requests you made in the notebook are listed. There are five in total. Click the top trace to see more details.
 +
 image::4-observability-tracing/traces.png[Traces]
 
 . A trace provides a variety of information, such as the system prompt, the input, the output, and any metadata. +
-You also have a *Details & Timeline* tab at the top to get a detailed view of each step in the trace and how long each took, which is useful when you have more complicated flows like agentic workflows. +
+The *Details & Timeline* tab shows each step in the trace and how long each step took, which is useful for more complex flows such as agentic workflows.
 +
 image::4-observability-tracing/trace-info.png[Trace info]
 

@@ -1,7 +1,8 @@
 = Observability and tracing
 
 [role="_abstract"]
-Generative AI (GenAI) models are nondeterministic systems, making any insight into how they behave in different scenarios more useful. +
-This chapter uses {productname-short} built-in model dashboards and MLflow tracing to see how the model behaves.
+Generative AI (GenAI) models are nondeterministic, so insight into how they respond in different scenarios is valuable.
+
+This chapter uses {productname-short} built-in model dashboards and MLflow tracing to show how the model responds.
 
 Start by examining {productname-short} model dashboards: xref:4-observability-tracing/1-model-observability.adoc[4.1. Monitor your model with metrics]
