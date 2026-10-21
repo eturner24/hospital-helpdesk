@@ -1,7 +1,7 @@
 = Build an agentic workflow
 
 [role="_abstract"]
-In the RAG chapter you let the *OGX server* manage the agent loop through the Responses API. +
+In the RAG chapter you let the *OGX server* manage the agent loop through the Responses API.
 Here, you move the loop to the *client* by using LangGraph, which gives you full control over state, tool execution, and human-in-the-loop decisions.
 
 == Prerequisites
@@ -11,16 +11,16 @@ Here, you move the loop to the *client* by using LangGraph, which gives you full
 
 == Procedure
 
-. Open the notebook `3_tools.ipynb` in your workbench and complete it. Return here when you are done.
+. Open the notebook `3_tools.ipynb` in your workbench and complete it. Then, continue this tutorial.
 
 == Verification
 
-. At the end of the notebook, you see outputs similar to this. +
+. At the end of the notebook, you see outputs similar to this.
 You can also see the intermediate tool calls the agent makes and which tool it chooses. This is a smaller model, so it might not always choose or interpret the tools correctly.
 +
 image::6-tools-agents/tool-response.png[Tool response]
 
-. Navigate to *Gen AI studio* > *Experiments (MLflow)* and look at the traces. +
+. Navigate to *Gen AI studio* > *Experiments (MLflow)* and look at the traces.
 Thanks to MLflow autologging you get more detail this time on exactly how the agent is running.
 +
 image::6-tools-agents/mlflow-results.png[Tool response]

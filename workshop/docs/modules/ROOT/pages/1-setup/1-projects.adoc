@@ -3,7 +3,7 @@
 [role="_abstract"]
 // Instructions for creating a data science project.
 
-An AI project is what contains many of the tools you will use inside of {productname-short}. +
+An AI project is what contains many of the tools you will use inside of {productname-short}.
 You can use projects to collaborate with your teammates, and you can create resources such as workbenches (IDEs), pipelines, and model deployments from within your project.
 
 == Prerequisites

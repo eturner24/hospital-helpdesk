@@ -1,8 +1,8 @@
 = RAG
 
 [role="_abstract"]
-You can now talk with your model, see how it responds to different questions, and traceably improve your system. +
-However, the model currently only answers based on what it has been trained on, and in a hospital you have many questions that need to be answered from your own internal documents. +
+You can now talk with your model, see how it responds to different questions, and traceably improve your system.
+However, the model currently only answers based on what it has been trained on, and in a hospital you have many questions that need to be answered from your own internal documents.
 To that end, you supply the model with your own documents so it can answer based on them instead. This is where RAG (Retrieval Augmented Generation) comes in.
 
 To start, explore how RAG works in the playground: xref:5-rag/1-rag-in-playground.adoc[5.1. Try RAG in the playground]

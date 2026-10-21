@@ -3,7 +3,7 @@
 [role="_abstract"]
 Now that you have a model deployed, use it to verify that it works.
 
-In {productname-short} you can use the *Playground* to send messages to the model. +
+In {productname-short} you can use the *Playground* to send messages to the model.
 Use it to confirm the model works and to see how it responds to different messages.
 // Guide to using the playground.
 

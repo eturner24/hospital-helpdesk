@@ -1,7 +1,7 @@
 = Customize model responses with prompts
 
 [role="_abstract"]
-The model answers your messages, but not yet like a Hospital Helpdesk AI assistant. +
+The model answers your messages, but not yet like a Hospital Helpdesk AI assistant.
 To improve this, modify the system prompt that gets sent to the model together with your message.
 
 There are two places where you can modify the prompt, either:
@@ -76,8 +76,8 @@ image::2-just-a-model/load-prompt-modal.png[Load prompt modal]
 +
 image::2-just-a-model/new-chat.png[Create a new chat]
 
-. Ask the chatbot a few things and see how it responds differently than before. You can for example ask it: +
-`A patient just called asking how to get to the radiology department from the main entrance. Can you help me draft a response?` +
+. Ask the chatbot a few things and see how it responds differently than before. You can for example ask it:
+`A patient just called asking how to get to the radiology department from the main entrance. Can you help me draft a response?`
 Because this is a small model, response quality can vary.
 
 == Next step

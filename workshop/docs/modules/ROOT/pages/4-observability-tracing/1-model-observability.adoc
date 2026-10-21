@@ -1,12 +1,12 @@
 = Monitor your model with metrics
 
 [role="_abstract"]
-{productname-short} provides a built-in observability dashboard for viewing model metrics. +
-Many more metrics are also scraped and exposed through Prometheus, and can be used to create custom OpenShift dashboards.
+{productname-short} provides a built-in observability dashboard for viewing model metrics.
+Metrics are also scraped and exposed through Prometheus, and can be used to create custom OpenShift dashboards.
 
 == Prerequisites
 
-- A model has been deployed as described in xref:2-just-a-model/1-model-catalog.adoc[2.1. Deploy a model from the model catalog]
+- You have deployed a model as described in xref:2-just-a-model/1-model-catalog.adoc[2.1. Deploy a model from the model catalog].
 
 == Procedure
 
@@ -25,7 +25,7 @@ image::4-observability-tracing/click-model.png[Click the model]
 +
 image::4-observability-tracing/model-metrics.png[Request per 5 minutes metric]
 
-. To generate more requests, or if none appear within this time period, return to the Playground as described in xref:2-just-a-model/2-playground.adoc[2.2. Chat with your model in the playground] and send a few more messages.
+. To generate more requests, or if none appear within this time period, send a few more messages from the Playground, as described in xref:2-just-a-model/2-playground.adoc[2.2. Chat with your model in the playground].
 
 == Next step
 

@@ -1,8 +1,8 @@
 = Ingest documents with a pipeline
 
 [role="_abstract"]
-Now that you have used RAG from the Playground, you can do the same thing in code. +
-There are two parts to it: one for ingesting the documents, and one for querying the model using those documents. +
+Now that you have used RAG from the Playground, you can do the same thing in code.
+There are two parts to it: one for ingesting the documents, and one for querying the model using those documents.
 Start here with the ingestion part, which you build as a pipeline so you can trigger it whenever new documents are added.
 
 == Prerequisites
@@ -14,8 +14,8 @@ Start here with the ingestion part, which you build as a pipeline so you can tri
 
 . Navigate to your workbench. If it is not open, find it through the {productname-short} dashboard > Projects > your project.
 
-. In the workbench, open the file called `rag_pipeline.py`. This is a pipeline built with the Kubeflow Pipelines Python SDK. Review how it is set up. +
-This pipeline contains the steps needed to chunk and ingest a new document into your RAG database, specifically this document: link:https://github.com/rh-aiservices-bu/hospital-helpdesk/blob/main/it_facilities_guide.pdf[it_facilities_guide.pdf,window=_blank] +
+. In the workbench, open the file called `rag_pipeline.py`. This is a pipeline built with the Kubeflow Pipelines Python SDK. Review how it is set up.
+This pipeline contains the steps needed to chunk and ingest a new document into your RAG database, specifically this document: link:https://github.com/rh-aiservices-bu/hospital-helpdesk/blob/main/it_facilities_guide.pdf[it_facilities_guide.pdf,window=_blank]
 The document has already been uploaded into an S3 bucket, which the pipeline downloads from. This is the bucket you set up in xref:1-setup/2-data-connections.adoc[1.2. Connect to your data].
 
 . Run the code to compile and run the pipeline by clicking the play button in the top menu.

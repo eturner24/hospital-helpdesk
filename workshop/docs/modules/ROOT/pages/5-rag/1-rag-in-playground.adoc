@@ -1,12 +1,12 @@
 = Try RAG in the playground
 
 [role="_abstract"]
-RAG (Retrieval Augmented Generation) is a technique where you feed information relevant to the current conversation into the prompt, so that the LLM has more context when it generates an answer. +
-The playground you have been using is built on top of something called OGX (Open GenAI Stack) which you can also use for RAG, specifically splitting large documents into smaller chunks, ingesting them into a vector database, and retrieving them. +
-You can use the LLM to answer specific questions, such as: +
+RAG (Retrieval Augmented Generation) is a technique where you feed information relevant to the current conversation into the prompt, so that the LLM has more context when it generates an answer.
+The playground you have been using is built on top of something called OGX (Open GenAI Stack) which you can also use for RAG, specifically splitting large documents into smaller chunks, ingesting them into a vector database, and retrieving them.
+You can use the LLM to answer specific questions, such as:
 `An infusion pump is showing error code 525. Who do I contact for a replacement and where do I send the faulty unit?`
 
-Before you build your own RAG behavior, you can try out RAG with your model inside the Playground. +
+Before you build your own RAG behavior, you can try out RAG with your model inside the Playground.
 You can upload documents and see the replies you get with your system prompt.
 
 == Prerequisites
@@ -23,13 +23,13 @@ You can upload documents and see the replies you get with your system prompt.
 +
 image::5-rag/enable-rag.png[Enable RAG]
 
-. Click *Upload* under *Add files* and select the oak_hospital_regulations.pdf you just downloaded.
+. Click *Upload* under *Add files* and select the `oak_hospital_regulations.pdf` file you just downloaded.
 
 . Change the chunk length to 200 and the overlap to 100 to get smaller chunks, and then click *Upload*.
 +
 image::5-rag/upload-settings.png[Upload Settings]
 
-. The upload pauses at 50% for a couple of minutes while the file is processed. When it is complete, it looks similar to this:
+. The upload might take a few minutes while the file is processed. The result appears as follows:
 +
 image::5-rag/pdf.uploaded.png[PDF Uploaded]
 
@@ -37,7 +37,7 @@ image::5-rag/pdf.uploaded.png[PDF Uploaded]
 
 . Verify that your system prompt is loaded.
 
-. Before testing with RAG, first turn off RAG so you can see how the model behaves without it. Ask this question:
+. To get a baseline response, turn off RAG and see how the model behaves without it. Ask this question:
 +
 [.lines_space]
 [.console-input]
@@ -47,7 +47,7 @@ An infusion pump is showing error code 525.
 Who do I contact for a replacement and where do I send the faulty unit?
 ----
 
-. Create a new chat by clicking *+ New Chat*. Turn on RAG, and then ask the same question.
+. Create a new chat by clicking *New chat*. Turn on RAG, and then ask the same question.
 
 . With RAG turned on, you see an answer similar to this:
 +
@@ -64,10 +64,10 @@ For an immediate replacement unit, contact the Central Supply department at exte
 After filing the ticket and securing a replacement, the faulty ClearFlow pump should be cleaned according to standard sanitation procedures and sent to the Biomedical Engineering department. Place the tagged unit in the designated "Biomedical Outgoing" bin, typically located in the floor's main utility room next to the clean supply closet.
 ====
 
-. You can ask more questions, such as where the Biomedical Engineering department is located. When you are done testing RAG, you can move on to the next section.
+. You can ask more questions, such as where the Biomedical Engineering department is located.
 
-The Playground is not connected to MLflow, so you do not see traces here. In the next section, you implement RAG in code and can view the traces.
+The Playground is not connected to MLflow, so you do not see traces here. You view traces later, when you run RAG in code.
 
 == Next step
 
-Now that you have tested RAG, implement it programmatically, starting with xref:5-rag/2-rag-pipeline.adoc[Ingest documents with a pipeline]
+Now that you have tested RAG, implement it programmatically, starting with xref:5-rag/2-rag-pipeline.adoc[Ingest documents with a pipeline].
