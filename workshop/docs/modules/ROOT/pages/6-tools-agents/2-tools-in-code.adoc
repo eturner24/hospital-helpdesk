@@ -1,13 +1,12 @@
 = Build an agentic workflow
 
 [role="_abstract"]
-In the RAG chapter you let the *OGX server* manage the agent loop through the Responses API.
-Here, you move the loop to the *client* by using LangGraph, which gives you full control over state, tool execution, and human-in-the-loop decisions.
+Earlier, the OGX server ran the agent loop for you. In this section, you run the loop yourself in code with LangGraph, which gives you more control over how the agent tracks state, calls tools, and pauses for human input.
 
 == Prerequisites
 
-- The MCP ticketing server is deployed in xref:6-tools-agents/1-install-mcp.adoc[6.1. Deploy an MCP server].
-- You have a workbench set up according to xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench].
+- You have deployed the MCP ticketing server as described in xref:6-tools-agents/1-install-mcp.adoc[6.1. Deploy an MCP server].
+- You have set up a workbench as described in xref:3-move-to-code/2-workbench.adoc[3.2. Create a workbench].
 
 == Procedure
 
@@ -21,6 +20,6 @@ You can also see the intermediate tool calls the agent makes and which tool it c
 image::6-tools-agents/tool-response.png[Tool response]
 
 . Navigate to *Gen AI studio* > *Experiments (MLflow)* and look at the traces.
-Thanks to MLflow autologging you get more detail this time on exactly how the agent is running.
+With MLflow autologging, you get more detail this time on exactly how the agent runs.
 +
 image::6-tools-agents/mlflow-results.png[Tool response]
